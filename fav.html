@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites Items</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .favorites-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            width: 80%;
+        }
+        .item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+        .item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .favorite-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            color: gray;
+        }
+        .favorite-icon.active {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="favorites-container">
+        <div class="item">
+            <img src="https://via.placeholder.com/150" alt="Item 1">
+            <h3>Item 1</h3>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/150" alt="Item 2">
+            <h3>Item 2</h3>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/150" alt="Item 3">
+            <h3>Item 3</h3>
+        </div>
+    </div>
+
+
+</body>
+</html>

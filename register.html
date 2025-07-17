@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - OG's Club</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+        header {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .logo {
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: 600;
+            color: white;
+        }
+        .register-container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+        }
+        .register-form h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+        }
+        .input-group {
+            position: relative;
+            display: flex;
+            align-items: center;
+            background: #f2f2f2;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .input-group i {
+            margin-right: 10px;
+            color: #666;
+        }
+        .input-group input {
+            border: none;
+            outline: none;
+            background: transparent;
+            width: 100%;
+            font-size: 16px;
+        }
+        .terms {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .terms a {
+            text-decoration: none;
+            color: #667eea;
+        }
+        .btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #5a67d8;
+        }
+        .login-link {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .login-link a {
+            color: #764ba2;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">OG's Club</a>
+    </header>
+
+    <div class="register-container">
+        <form action="dashboard.html" class="register-form">
+            <h2>Create an Account</h2>
+            <div class="input-group">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="input-group">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="input-group">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Confirm Password" required>
+            </div>
+            <div class="terms">
+                <label><input type="checkbox" required> I agree to the <a href="#">Terms & Conditions</a></label>
+            </div>
+            <button type="submit" class="btn" >Register</button>
+            <div class="login-link">
+                <p>Already have an account? <a href="login.html">Login Here</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

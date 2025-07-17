@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - OG's Club</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+ 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        .navbar h1 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .navbar .logout {
+            background: #ff4b5c;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .navbar .logout:hover {
+            background: #e63946;
+        }
+        .dashboard-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .dashboard-content h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .dashboard-content p {
+            font-size: 18px;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>OG's Club Dashboard</h1>
+        <button class="logout" onclick="logout()">Logout</button>
+    </div>
+    <div class="dashboard-content">
+        <h2>Welcome to OG's Club</h2>
+        <p>This is your exclusive dashboard where you can manage your account, access premium content, and connect with other members.</p>
+    </div>
+    <script>
+        function logout() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
