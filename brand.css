@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+
+header {
+    background: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+}
+
+.navlist li {
+    margin: 0 15px;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navlist a:hover, .navlist .active {
+    color: #f39c12;
+}
+
+/* Brands Section */
+.brands {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.center-text h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.brands-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.brand-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.brand-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.brand-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.brand-card p {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    text-align: center;
+}
+
+.explore-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.explore-btn:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.footer-box {
+    margin: 10px 0;
+}
+
+.footer-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-box a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.footer-box a:hover {
+    color: #f39c12;
+}
+
+
+@media (max-width: 768px) {
+    .brands-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
